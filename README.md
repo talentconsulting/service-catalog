@@ -135,10 +135,7 @@ fi
 
 ## What is the rollout process of our schema?
 
-Teams will be informed of the new version of schema being implemented via
-
-1. BCE forum
-2. Tech forum
+Teams will be informed of the new version of schema being implemented via slack
 
 It will be the responsibility of the leadership within the teams to communicate these changes down and to raise
  specific jira tasks to conform to the new schema. A date for removal of the old schema will be agreed and
@@ -149,4 +146,4 @@ The previous version of the schema will be supported for a defined period at whi
  
 ## How do I get an external service in the catalogue?
 
-Add your external metadata to the [external](./external-services)
+Please reach out to the architecture team
