@@ -1,6 +1,8 @@
 #!/usr/bin/env bash
 
+echo "Logging into docker"
 echo $TOKEN | docker login ghcr.io -u USERNAME --password-stdin
+echo "successfully logged in"
 
 cleanup() {
 #  docker-compose down
