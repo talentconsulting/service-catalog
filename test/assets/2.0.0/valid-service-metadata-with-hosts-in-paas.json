@@ -1,0 +1,40 @@
+{
+  "name": "talentsuite.paas-hosted-service",
+  "owner": "richard.parkins@talentconsulting.uk",
+  "vision": "To retrieve quotes requested by product journeys",
+  "repo": "https://github.com/talentconsulting/talentsuite.paas-hosted-service",
+  "runbook": "https://talentconsulting.atlassian.net/wiki/spaces/ON/pages/27687676/Runbook+-+new",
+  "team": "Sec-ops",
+  "contracts": [{
+    "role":"api",
+    "protocol":"http"
+  }],
+  "format": "json",
+  "dependencies": {
+    "critical": [
+      {
+        "name": "talentsuite.client-api",
+        "role": "api",
+        "protocol": "http"
+      }
+    ],
+    "non-critical": [
+      {
+        "name": "talentsuite.idam-service",
+        "role": "api",
+        "protocol": "http"
+      },
+      {
+        "name": "talentsuite.legacy-enquiries",
+        "role": "api",
+        "protocol": "http"
+      },
+      {
+        "name": "talentsuite.idam-enquiries",
+        "role": "api",
+        "protocol": "http"
+      }
+    ]
+  },
+  "events": []
+}

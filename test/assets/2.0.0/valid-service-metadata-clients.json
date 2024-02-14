@@ -1,0 +1,40 @@
+{
+  "name": "talentsuite.projects-api-clients",
+  "owner": "richard.parkins@talentconsulting.uk",
+  "vision": "To retrieve quotes requested by product journeys",
+  "repo": "https://github.com/talentconsulting/talentsuite.projects-api1",
+  "runbook": "https://talentconsulting.atlassian.net/wiki/spaces/ON/pages/27687676/Runbook+-+new",
+  "team": "Analysis",
+  "contracts": [{
+    "role":"api",
+    "protocol":"http"
+  }],
+  "format": "json",
+  "dependencies": {
+    "critical": [
+      {
+        "name": "talentsuite.client-api",
+        "role": "api",
+        "protocol": "http"
+      }
+    ],
+    "non-critical": [
+      {
+        "name": "engineering.test",
+        "role": "api",
+        "protocol": "http"
+      },
+      {
+        "name": "thirdparty.sql",
+        "role": "api",
+        "protocol": "http"
+      },
+      {
+        "name": "thirdparty.mongodb",
+        "role": "api",
+        "protocol": "http"
+      }
+    ]
+  },
+  "events": []
+}

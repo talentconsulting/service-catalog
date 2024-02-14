@@ -1,0 +1,40 @@
+{
+  "name": "talentsuite.projects-api-lego",
+  "owner": "richard.parkins@talentconsulting.uk",
+  "vision": "To retrieve quotes requested by product journeys",
+  "repo": "https://github.com/talentconsulting/talentsuite.projects-api",
+  "runbook": "https://talentconsulting.atlassian.net/wiki/spaces/ON/pages/27687676/Runbook+-+new",
+  "team": "Data Architecture",
+  "contracts": [{
+    "role":"api",
+    "protocol":"http"
+  }],
+  "format": "json",
+  "dependencies": {
+    "critical": [
+      {
+        "name": "talentsuite.client-api",
+        "role": "api",
+        "protocol": "http"
+      }
+    ],
+    "non-critical": [
+      {
+        "name": "talentsuite.idam-service",
+        "role": "api",
+        "protocol": "http"
+      },
+      {
+        "name": "thirdparty.sql",
+        "role": "api",
+        "protocol": "http"
+      },
+      {
+        "name": "travel.idam-enquiries",
+        "role": "api",
+        "protocol": "http"
+      }
+    ]
+  },
+  "events": []
+}

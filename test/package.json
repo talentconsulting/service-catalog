@@ -1,0 +1,18 @@
+{
+  "name": "engineering.service-catalogue-api-test",
+  "version": "2.0.0",
+  "private": true,
+  "description": "The new Service Catalogue API that allows teams to push and validate their service metadata",
+  "scripts": {
+    "start": "node ./bin/www",
+    "test": "./node_modules/.bin/cucumber-js ./features/*.feature --exit"
+  },
+  "dependencies": {
+    "@cucumber/cucumber": "^10.3.1",
+    "apickli": "^3.0.2",
+    "axios": "^0.21.1"
+  },
+  "devDependencies": {
+    "mongodb": "^3.6.3"
+  }
+}

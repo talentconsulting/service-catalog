@@ -1,0 +1,23 @@
+{
+  "name": "service-catalog",
+  "owner": "richard.parkins@talentconsulting.uk",
+  "vision": "A sanitized view of the service metadata for all our services",
+  "repo": "https://github.com/talentconsulting/service-catalog",
+  "runbook": "https://github.com/talentconsulting/service-catalog",
+  "team":"Solution Architecture",
+  "contracts": [{
+    "role": "api",
+    "protocol": "http"
+  }],
+  "dependencies": {
+    "critical": [
+      {
+        "name": "SQL Server",
+        "role": "storage",
+        "protocol": "tds"
+      }
+    ],
+    "non-critical": []
+  },
+  "events": []
+}

@@ -1,0 +1,32 @@
+{
+  "name": "talentsuite.projects-api",
+  "owner": "richard.parkins@talentconsulting.uk",
+  "vision": "To manage the projects within the talentsuite",
+  "repo": "https://github.com/talentconsulting/talentsuite.projects-api",
+  "runbook": "https://talentconsulting.atlassian.net/wiki/spaces/ON/pages/294977642/projects+Runbook+-+new",
+  "role": "api",
+  "protocol": "http",
+  "format": "json",
+  "dependencies": {
+    "critical": [
+      {
+        "name": "talentsuite.client-api",
+        "role": "api",
+        "protocol": "http"
+      },
+      {
+        "name": "talentsuite.audit-service",
+        "role": "api",
+        "protocol": "http"
+      }
+    ],
+    "non-critical": [
+      {
+        "name": "talentsuite.idam-service",
+        "role": "api",
+        "protocol": "http"
+      }
+    ]
+  },
+  "events": []
+}
