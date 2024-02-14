@@ -1,4 +1,4 @@
-FROM ghcr.io/talentconsulting/consumer-contract-testing:main
+FROM talentconsulting/consumer-contract-testing:main
 COPY . /usr/src/app
 WORKDIR /usr/src/app
 

@@ -3,6 +3,7 @@
 echo "Logging into docker"
 echo $TOKEN | docker login ghcr.io -u USERNAME --password-stdin
 echo "successfully logged in"
+docker pull ghcr.io/talentconsulting/consumer-contract-testing:main
 
 cleanup() {
 #  docker-compose down
