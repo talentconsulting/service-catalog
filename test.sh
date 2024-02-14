@@ -1,5 +1,7 @@
 #!/usr/bin/env bash
 
+echo $TOKEN | docker login ghcr.io -u USERNAME --password-stdin
+
 cleanup() {
 #  docker-compose down
   docker stop app || true
