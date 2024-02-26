@@ -204,7 +204,7 @@ paths:
       summary: Will decommision the service detailed.
       operationId: decommissionByService
       description: |
-        deommissions the metadata for this service
+        decommissions the metadata for this service
       parameters:
         - name: serviceName
           description: the service name to fetch

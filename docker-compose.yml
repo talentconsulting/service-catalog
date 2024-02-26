@@ -10,7 +10,6 @@ services:
       MONGODB_ATLAS_URI: mongodb://mongodb:27017
     depends_on:
     - mongodb
-    - paas-data-scraper
     ports:
     - 3000:3000
   mongodb:
